@@ -10,4 +10,15 @@ import { Component } from '@angular/core';
 export class ParentComponent {
   // tslint:disable-next-line:no-inferrable-types
   childTitle: string = 'Text passed to child';
+
+  // Passed string was just for fun, to see it on the HTML
+
+  // tslint:disable-next-line:no-inferrable-types
+  passedString: string = '';
+
+
+  onNotify(notify: string) {
+    this.passedString = notify;
+    console.log(notify);
+  }
 }
