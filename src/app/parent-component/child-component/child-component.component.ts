@@ -4,7 +4,7 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
   selector: 'app-child-component',
   template: `<h1>{{title}}</h1>
               <br>
-              <button type="button" (click)="notifyParent($event)">Click Me!</button>`,
+              <button type="button" (click)="notifyParent()">Click Me!</button>`,
   styleUrls: ['./child-component.component.css']
 })
 export class ChildComponentComponent implements OnInit {
