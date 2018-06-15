@@ -1,2 +1,3 @@
 <h1>I'm a container component!</h1>
-<app-child-component [title]="childTitle"></app-child-component>
+<app-child-component [title]="childTitle" (emmitter)="onNotify($event)"></app-child-component>
+{{passedString}}
